@@ -49,7 +49,7 @@ public class Point {
         return Math.sqrt(distance);
     }
 
-    public Point Midpoint(Point a) {
+    public Point midpoint(Point a) {
         double midPointX = (this.GetX() + a.GetX()) / 2;
         double midPointY = (this.GetY() + a.GetY()) / 2;
 
@@ -65,13 +65,13 @@ public class Point {
         return slope;
     }
 
-    public double Yintercept(Point a) {
+    public double yIntercept(Point a) {
         double slope = this.slope(a);
         return this.GetY() - slope * this.GetX();
     }
 
     public void linearEquation(Point a) {
-        double Yintercept = this.Yintercept(a);
+        double Yintercept = this.yIntercept(a);
 
         if (Yintercept > 0) {
             System.out.println("y = " + slope(a) + "x + " + Yintercept);
@@ -81,4 +81,4 @@ public class Point {
             System.out.println("y = " + slope(a) + "x " + Yintercept);
         }
     }
-}   // make sure capitals are in order with java doc
+}   
