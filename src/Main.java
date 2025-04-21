@@ -1,5 +1,4 @@
 import java.util.Scanner;
-//import Point.java;
 
 public class Main {
     public static void main(String[] args) throws Exception {
